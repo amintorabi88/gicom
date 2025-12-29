@@ -1,0 +1,17 @@
+# Python compiled files
+__pycache__/
+*.pyc
+
+# Distribution / Install metadata
+*.egg-info/
+dist/
+build/
+
+# Environment variables (Security!)
+.env
+
+# System files
+.DS_Store
+
+# IDE settings (Optional, good for VS Code)
+.vscode/
