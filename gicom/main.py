@@ -41,7 +41,9 @@ def generate_text(diff):
         "Rules:\n"
         "1. The first line must be under 50 characters.\n"
         "2. If the change is complex, add a bulleted body description.\n"
-        "3. Do NOT output markdown code blocks (```). Just the raw text."
+        "3. Do NOT output markdown code blocks (```). Just the raw text.\n"
+        "4. Do NOT use backquote.\n"
+        "5. Write like a human."
     )
 
     with console.status(
