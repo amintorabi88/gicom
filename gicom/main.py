@@ -5,7 +5,7 @@ import pyperclip
 from openai import OpenAI
 from rich.console import Console
 from rich.panel import Panel
-from config import get_api_key
+from gicom.config import get_api_key
 
 app = typer.Typer()
 console = Console()

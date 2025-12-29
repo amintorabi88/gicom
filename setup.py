@@ -1,9 +1,10 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="gicom",
     version="0.1.0",
-    py_modules=["main", "config"],
+    packages=find_packages(),
+    include_package_data=True,
     install_requires=[
         "openai==1.58.1",
         "typer==0.12.5",
@@ -11,11 +12,11 @@ setup(
         "rich==13.9.4",
         "python-dotenv==1.0.1",
         "pyperclip",
-        "pwinput",
+        # pwinput removed
     ],
     entry_points={
         "console_scripts": [
-            "gicom = main:app",
+            "gicom = gicom.main:app",
         ],
     },
 )
