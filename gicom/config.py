@@ -30,7 +30,8 @@ def get_api_key():
                 key = data.get("api_key")
                 if key:
                     return key
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, KeyError, IOError) as e:
+            console.print(f"[yellow]Warning: Could not read config: {e}[/yellow]")
             pass
 
     console.print(
@@ -42,8 +43,6 @@ def get_api_key():
     )
 
     new_key = typer.prompt("Paste your API Key here (hidden)", hide_input=True)
-
-    # Clean the input
     new_key = new_key.strip()
 
     save_api_key(new_key)

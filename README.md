@@ -1,5 +1,5 @@
 
-# Gicom 👻
+# Gicom 
 
 **AI-powered Git commit messages generated directly from your terminal.**
 
@@ -36,12 +36,11 @@ gicom get-ai
 
 ```
 
-
 3. Paste your key when prompted (input will be hidden for security).
 
 ## 🛠️ Usage
 
-### The "Silent" Workflow (Recommended)
+### The Workflow
 
 This is designed for speed. It generates the message and copies it to your clipboard automatically.
 
@@ -70,21 +69,6 @@ gicom commit
 
 ```
 
-## ⌨️ Pro Tip: Keyboard Shortcut
-
-Map `gicom get-ai` to a hotkey (like `Cmd + Shift + G`) in your terminal emulator or VS Code to generate commit messages without typing a single word.
-
-**VS Code `keybindings.json`:**
-
-```json
-{
-    "key": "cmd+shift+g",
-    "command": "workbench.action.terminal.sendSequence",
-    "args": { "text": "gicom get-ai\u000D" },
-    "when": "terminalFocus"
-}
-
-```
 
 ## 🔒 Security
 
@@ -92,4 +76,3 @@ Map `gicom get-ai` to a hotkey (like `Cmd + Shift + G`) in your terminal emulato
 * The file permissions are set to `600` (User Read/Write only).
 * Your key is sent only to OpenAI servers for message generation and is never shared elsewhere.
 
-```
