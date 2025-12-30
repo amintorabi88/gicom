@@ -14,22 +14,22 @@
 
 ## 📦 Installation
 
-To install gicom globally on your system, clone the repository and install it with pip.
+To install gicom from PyPI:
 
 ```bash
-git clone [https://github.com/amintorabi88/gicom.git](https://github.com/amintorabi88/gicom.git)
-cd gicom
-pip install -e .
+pip install gicom
 
 ```
 
-> **Note:** The `-e` flag installs it in "Editable" mode, so you can update the code easily without reinstalling.
 
 ## 🚀 Setup
 
-The first time you run gicom, it will ask for your OpenAI API Key.
+The first time you run gicom, it will prompt you for your OpenAI API key.
 
-1. Get your key from the [OpenAI Platform](https://platform.openai.com/api-keys).
+1. Get your API key from the [OpenAI Platform](https://platform.openai.com/api-keys).  
+   If you see an `insufficient_quota` error, make sure you have added some credit to your account.
+   Even $1 is usually enough, since the model used by gicom is very inexpensive.
+
 2. Run the tool:
 ```bash
 gicom get-ai
