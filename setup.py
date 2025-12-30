@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text(encoding="utf-8")
 
 setup(
     name="gicom",
-    version="0.1.0",
+    version="0.2.0",
     description="AI-powered Git commit messages generated directly from your terminal.",
     long_description=long_description,
     long_description_content_type="text/markdown",
